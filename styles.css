@@ -1,0 +1,168 @@
+/* 
+1. use borders as containers to test desktop
+and mobile screens styling 
+2. fix typography (fonts, size, weight)
+3. clean out code, remove unnecessary and redundant
+code
+*/
+
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--color-neon-blue: #5451fa;
+	--color-pale-lavender: #dcdafe;
+	--color-armadillo: #4a4a4a;
+	--color-aluminum: #979797;
+	--font-size-main: 16px;
+	--font-size-bigger: calc(18px + 24px);
+	--font-weight-normal: 400;
+	--font-weight-bold: 600;
+}
+
+@font-face {
+	font-family: roboto-black;
+	src: url(Roboto/Roboto-Black.ttf);
+}
+
+@font-face {
+	font-family: roboto-small;
+	src: url(Roboto/Roboto-Medium.ttf);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#screen-sample {
+	border: 1px solid;
+	width: 414px;
+	height: 896px;
+	background-color: var(--color-neon-blue);
+}
+
+#profile-widget {
+	border: 1px;
+	border-radius: 25px;
+	background-color: white;
+	width: 90%;
+	height: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+header {
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 1rem;
+	padding-top: 1rem;
+}
+
+.notification-bell {
+	margin-left: .5rem;
+}
+
+#profile {
+	padding-left: 1rem;
+	padding-right: 1rem;
+	text-align: center;
+	margin-top: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.banner {
+	width: 100%;
+	border-radius: 25px;
+}
+
+.profile-pic {
+	width: 35%;
+	margin-top: -4rem;
+	z-index: 1;
+}
+
+.profile-name {
+	margin-top: 0;
+	font-family: roboto-black;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.bio {
+	color: var(--color-aluminum);
+	margin-top: -1rem;
+	font-family: roboto-small;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.stats {
+	display: flex;
+	justify-content: space-between;
+}
+
+.following, .followers, .posts {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-right: 1rem;
+}
+
+.number {
+	font-family: roboto-black;
+	font-size: 24px;
+}
+
+.label {
+	margin-top: -1rem;
+	font-family: roboto-small;
+	color: var(--color-aluminum);
+}
+
+.followers .number {
+	color: var(--color-neon-blue);
+}
+
+.button {
+	border: 1px;
+	width: 100%;
+	border-radius: 10px;
+	background-color: var(--color-neon-blue);
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	color: white;
+	font-family: roboto-small;
+}
+
+.info {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 2rem;
+	color: var(--color-aluminum);
+	font-family: roboto-small;
+	font-size: 14px;
+	padding-left: 1.5rem;
+	line-height: 2rem;
+}
+
+span {
+	font-weight: bold;
+}
+
+/* DESKTOP */
+@media (max-width: 1440px) {
+	
+}
+
+/* MOBILE */
+@media (max-width: 414px) {
+	
+}
