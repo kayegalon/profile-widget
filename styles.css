@@ -23,12 +23,12 @@ code
 
 @font-face {
 	font-family: roboto-black;
-	src: url(Roboto/Roboto-Black.ttf);
+	src: url(Roboto-Black.ttf);
 }
 
 @font-face {
 	font-family: roboto-small;
-	src: url(Roboto/Roboto-Medium.ttf);
+	src: url(Roboto-Medium.ttf);
 }
 
 body {
